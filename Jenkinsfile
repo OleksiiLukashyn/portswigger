@@ -22,7 +22,7 @@ pipeline {
     }
     post {
         always {
-            junit allowEmptyResults: true, testResults: '**/test-results/*.xml', skipPublishingChecks: true
+            junit allowEmptyResults: true, testResults: 'test-results.xml', skipPublishingChecks: true
         }
     }
 }
